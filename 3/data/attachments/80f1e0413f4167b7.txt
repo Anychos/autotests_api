@@ -1,0 +1,32 @@
+INFO     HTTP_CLIENT:event_hooks.py:26 Делаю POST запрос к http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:26 Делаю POST запрос к http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:26 Делаю POST запрос к http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:26 Делаю POST запрос к http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:26 Делаю GET запрос к http://localhost:8000/api/v1/courses?userId=e5f9be3d-46a9-4aa1-a16f-4947b81f91a1
+INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/courses?userId=e5f9be3d-46a9-4aa1-a16f-4947b81f91a1
+INFO     BASE_ASSERTIONS:base_assertions.py:17 Проверка соответствия статус кода 200
+INFO     COURSES_ASSERTIONS:courses.py:66 Проверка ответа на запрос получения курса
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "courses" соответствует 1
+INFO     COURSES_ASSERTIONS:courses.py:43 Проверка курса
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "id" соответствует 4e96c16b-0b47-4486-80e1-cb1d5707132b
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "title" соответствует Cell staff American direction visit.
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "max_score" соответствует 89
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "min_score" соответствует 19
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "description" соответствует Political save leave respond choice mouth. Rule may her development important medical. Tax cut grow fill whole moment.
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "estimated_time" соответствует 21 days
+INFO     FILES_ASSERTIONS:files.py:42 Проверка файла
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "id" соответствует 2db134ac-0296-4104-8b88-cda5b7e99bb9
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "url" соответствует http://localhost:8000/static/courses/image.png
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "filename" соответствует image.png
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "directory" соответствует courses
+INFO     USERS_ASSERTIONS:users.py:37 Проверка пользователя
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "id" соответствует e5f9be3d-46a9-4aa1-a16f-4947b81f91a1
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "email" соответствует ntucker@example.org
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "last_name" соответствует Hanson
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "first_name" соответствует Brenda
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "middle_name" соответствует Craig
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Валидируется JSON схема

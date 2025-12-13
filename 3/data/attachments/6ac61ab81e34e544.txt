@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEyLTEzVDA1OjMwOjEyLjU5MzM3NyIsInVzZXJfaWQiOiI2Yzg3NTFkOC0zMmQ0LTQzNjAtOTA1ZS1mNzQ5M2FiYWFmYjMifQ.2Xv6HMKvZQ1Cgh-QrKt9kQwkrY9S75UCHD9qvADRpmk' \
+  -H 'content-length: 367' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Style hear simply probably difference.","maxScore":80,"minScore":39,"description":"Again main state dream church.\nWife exist window protect. Strong allow good.\nSocial rich cup. Establish vote into design method that.","estimatedTime":"6 days","previewFileId":"a9eb5187-12b6-46b6-a116-a37ccf1d16a5","createdByUserId":"6c8751d8-32d4-4360-905e-f7493abaafb3"}'

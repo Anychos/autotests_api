@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEyLTEzVDA1OjMwOjE1LjI4MTcxNCIsInVzZXJfaWQiOiJmYTBhODAwNy0yZThjLTQ0OTAtYWUxZC1jMDFmNGVhMjQyZDUifQ.si8e4kG2HdZhOsec81h9FpEdYQlXwlhrmUwuaRcBs_E' \
+  -H 'content-length: 347' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Movement ability meeting.","maxScore":64,"minScore":24,"description":"Safe keep tree beautiful near space increase large. Fly friend article not family remember. Avoid plan future wish build quite.","estimatedTime":"25 days","previewFileId":"ec29aed8-2216-4182-9d18-027ec55484b6","createdByUserId":"fa0a8007-2e8c-4490-ae1d-c01f4ea242d5"}'
