@@ -1,0 +1,21 @@
+INFO     HTTP_CLIENT:event_hooks.py:26 Делаю POST запрос к http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:26 Делаю POST запрос к http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:26 Делаю POST запрос к http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:26 Делаю POST запрос к http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/courses
+INFO     BASE_ASSERTIONS:base_assertions.py:17 Проверка соответствия статус кода 200
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Валидируется JSON схема
+INFO     COURSES_ASSERTIONS:courses.py:81 Проверка ответа на запрос создания курса
+INFO     BASE_ASSERTIONS:base_assertions.py:45 Проверка наличия поля "id"
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "title" соответствует Better then expert above.
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "max_score" соответствует 66
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "min_score" соответствует 43
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "description" соответствует Industry history before data. Or explain each increase property truth.
+Matter with federal enjoy teach. City beyond yourself.
+Current which mission keep meeting.
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "estimated_time" соответствует 17 days
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "preview_file" соответствует dac5cb56-a2d9-4fa5-af90-7a4e4339eb97
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "created_by_user" соответствует 99cd1355-bf85-47ab-8732-778ab6a66494

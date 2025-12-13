@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEyLTEzVDA1OjM5OjM1LjY4NDgyMCIsInVzZXJfaWQiOiI5NDUyZWY0MC1iY2NhLTRlYWYtOGU0ZS01MzhlMTI0YWRlNzMifQ.MFzWY_uDbNwGX0PXBUt77fvYxlKUKlOLOM_9uGA8-eE' \
+  -H 'content-length: 329' \
+  -H 'content-type: application/json' \
+  -d '{"title":"We remember contain business board.","maxScore":97,"minScore":48,"description":"Space fly fly medical. Behavior economic although rate compare inside. Nor continue attorney social.","estimatedTime":"3 days","previewFileId":"b0ef2212-f4bc-4839-93b7-1cd81549baba","createdByUserId":"9452ef40-bcca-4eaf-8e4e-538e124ade73"}'

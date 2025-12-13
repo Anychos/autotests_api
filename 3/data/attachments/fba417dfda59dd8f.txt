@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/95f73b79-006a-4b61-a598-ad198d0ff1b7' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEyLTEzVDA1OjM5OjMzLjI3NTAyNiIsInVzZXJfaWQiOiJiNzFiYmNmZi05MDkxLTRlZTItOTBiNS0wYmMwMGRmODRmNzUifQ.hpbvlnJwO5PSgmr0J-k2j9gxuJ2IBYwh8aDBKiZ3pV0' \
+  -H 'content-length: 220' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Firm team she child and nation you.","maxScore":97,"minScore":13,"description":"Already someone never. Outside high consider attention exist.\nChange entire lose politics themselves.","estimatedTime":"26 days"}'

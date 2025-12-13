@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEyLTEzVDA1OjM5OjM0LjE2NzY4MiIsInVzZXJfaWQiOiI5OWNkMTM1NS1iZjg1LTQ3YWItODczMi03NzhhYjZhNjY0OTQifQ.rDbXx0tS34bS6lRm2OrUKjyDU9Mbxf1nTF6wgOPzbqs' \
+  -H 'content-length: 383' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Better then expert above.","maxScore":66,"minScore":43,"description":"Industry history before data. Or explain each increase property truth.\nMatter with federal enjoy teach. City beyond yourself.\nCurrent which mission keep meeting.","estimatedTime":"17 days","previewFileId":"dac5cb56-a2d9-4fa5-af90-7a4e4339eb97","createdByUserId":"99cd1355-bf85-47ab-8732-778ab6a66494"}'

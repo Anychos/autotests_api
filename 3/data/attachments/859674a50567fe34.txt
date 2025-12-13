@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEyLTEzVDA1OjM5OjMzLjI3NTAyNiIsInVzZXJfaWQiOiJiNzFiYmNmZi05MDkxLTRlZTItOTBiNS0wYmMwMGRmODRmNzUifQ.hpbvlnJwO5PSgmr0J-k2j9gxuJ2IBYwh8aDBKiZ3pV0' \
+  -H 'content-length: 425' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Determine sure media direction sit avoid.","maxScore":96,"minScore":44,"description":"Begin special modern off. Already window computer break on require attack.\nStory occur wide six can paper weight past. Black push add person any. Ability benefit article above sport piece.","estimatedTime":"11 days","previewFileId":"f503f394-18b2-40c8-a19a-746a44aed7f5","createdByUserId":"b71bbcff-9091-4ee2-90b5-0bc00df84f75"}'

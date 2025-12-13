@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEyLTEzVDA1OjM5OjM1Ljk2NTI1MSIsInVzZXJfaWQiOiJmODllMmM0MS0zMDM3LTQ5NzctODEwMy1jZWI3MGZhYjM4MDcifQ.1p5HBKrdLmG002I0RJ5JMhvpm1j3liMmmP5NtC17wYs' \
+  -H 'content-length: 422' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Reality letter deep so allow finish dog.","maxScore":58,"minScore":26,"description":"Which indicate nearly star she region. Call condition social identify.\nYour participant leave read. Authority understand contain trade environmental enter. Arm their really much consider.","estimatedTime":"6 days","previewFileId":"7f2e1261-95ef-4beb-a229-61e01a98cd6e","createdByUserId":"f89e2c41-3037-4977-8103-ceb70fab3807"}'
