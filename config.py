@@ -6,7 +6,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 class HTTPClientSettings(BaseModel):
     base_url: HttpUrl
-    timeout: float = 10.0
+    timeout: int = 10
 
     @property
     def url(self) -> str:
