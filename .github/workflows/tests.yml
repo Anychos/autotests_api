@@ -1,0 +1,70 @@
+name: API tests # название процесса
+
+on: # если происходит
+  push: # пуш
+    branches: # в ветку main
+      - main
+  pull_request: # или создается pull request
+    branches: # в ветку main
+      - main
+
+jobs: # то запускается процесс
+  run-tests: # с названием run tests
+    runs-on: ubuntu-latest # на машине ubuntu
+
+    steps: # шаги
+      - name: Проверка репозитория на доступ к GITHUB_WORKSPACE # название шага
+        uses: actions/checkout@v5 # действие, которое происходит
+
+      - name: Установка Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Клонирование репозитория тестового сервера в проект
+        run: git clone https://github.com/Nikita-Filonov/qa-automation-engineer-api-course.git
+
+      - name: Настройка тестового сервера
+        run: pip install -r qa-automation-engineer-api-course/requirements.txt
+
+      - name: Запуск тестового сервера
+        env:
+          APP_HOST: "http://localhost:8000"
+          DATABASE_URL: "sqlite+aiosqlite:///./local.db"
+          JWT_ALGORITHM: "HS256"
+          JWT_SECRET_KEY: "qa-automation-engineer-api-course-secret-key"
+          JWT_ACCESS_TOKEN_EXPIRE: 1800
+          JWT_REFRESH_TOKEN_EXPIRE: 5184000
+        run: uvicorn main:app --host 0.0.0.0 --port 8000 --app-dir ./qa-automation-engineer-api-course &
+
+      - name: Установка зависимостей в проекте
+        run: |
+          python - pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Запуск тестов и генерация отчета Allure
+        run: |
+          pytest -m regression --alluredir=allure-results --numprocesses=4
+
+      - name: Получение отчета Allure
+        uses: actions/checkout@v5
+        if: always()
+        continue-on-error: true
+        with:
+          ref: gh-pages
+          path: gh-pages
+
+      - name: Генерация Allure отчета с историей
+        uses: simple-elf/allure-report-action@v1.13
+        if: always()
+        with:
+          allure_results: allure-results
+          allure_history: allure-history
+
+      - name: Загрузка Allure отчета на GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        if: always()
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: allure-history
