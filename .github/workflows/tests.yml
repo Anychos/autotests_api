@@ -61,10 +61,10 @@ jobs: # то запускается процесс
 
     steps:
       - name: Загрузка отчета Allure
-      - uses: actions/download-artifact@v4
-      - with:
-        - name: allure-results
-        - path: allure-results
+        uses: actions/download-artifact@v4
+        with:
+          name: allure-results
+          path: allure-results
 
       - name: Генерация Allure отчета с историей
         uses: simple-elf/allure-report-action@v1.13
