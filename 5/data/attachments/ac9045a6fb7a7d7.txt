@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEyLTE0VDA0OjE1OjIzLjkzNDc0OSIsInVzZXJfaWQiOiJhMDY5Mzg0OS01NTgyLTRlNTktODU0MS1hMmYwNmZkYjRiOGEifQ.5TYzPHki2fZUtpBcPT3ND7evOmwrCC9EtXGzMVRGb7k' \
+  -H 'content-length: 364' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Notice speak realize amount message unit wear.","maxScore":51,"minScore":1,"description":"Science yet well record. Type spend answer walk. Front great there level option.\nSummer keep know film. Discuss son economy.","estimatedTime":"3 days","previewFileId":"bcb25529-ffe6-4f6a-928d-a17e5a5645f7","createdByUserId":"a0693849-5582-4e59-8541-a2f06fdb4b8a"}'

@@ -1,0 +1,32 @@
+INFO     HTTP_CLIENT:event_hooks.py:26 Делаю POST запрос к http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:26 Делаю POST запрос к http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:26 Делаю POST запрос к http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:26 Делаю POST запрос к http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:26 Делаю GET запрос к http://localhost:8000/api/v1/courses?userId=3e43eb1d-f310-415c-bd99-8072fe2e8477
+INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/courses?userId=3e43eb1d-f310-415c-bd99-8072fe2e8477
+INFO     BASE_ASSERTIONS:base_assertions.py:17 Проверка соответствия статус кода 200
+INFO     COURSES_ASSERTIONS:courses.py:66 Проверка ответа на запрос получения курса
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "courses" соответствует 1
+INFO     COURSES_ASSERTIONS:courses.py:43 Проверка курса
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "id" соответствует 71e8175e-ffc2-4804-9038-e58988adc209
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "title" соответствует Red thousand we high door skin.
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "max_score" соответствует 85
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "min_score" соответствует 18
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "description" соответствует Laugh moment time dog age structure glass. It general ball man other responsibility daughter imagine. Crime evidence late by color.
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "estimated_time" соответствует 5 days
+INFO     FILES_ASSERTIONS:files.py:42 Проверка файла
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "id" соответствует c6c0174a-7932-443b-9e83-65b0ecf845e6
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "url" соответствует http://localhost:8000/static/courses/image.png
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "filename" соответствует image.png
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "directory" соответствует courses
+INFO     USERS_ASSERTIONS:users.py:37 Проверка пользователя
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "id" соответствует 3e43eb1d-f310-415c-bd99-8072fe2e8477
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "email" соответствует eflowers@example.org
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "last_name" соответствует Rosario
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "first_name" соответствует Dawn
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "middle_name" соответствует Nicole
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Валидируется JSON схема

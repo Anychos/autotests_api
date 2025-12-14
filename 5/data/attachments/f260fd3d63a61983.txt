@@ -1,0 +1,19 @@
+INFO     HTTP_CLIENT:event_hooks.py:26 Делаю POST запрос к http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:26 Делаю POST запрос к http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:26 Делаю POST запрос к http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:26 Делаю POST запрос к http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:26 Делаю PATCH запрос к http://localhost:8000/api/v1/courses/277c48ee-19ec-41f3-8cf1-ae668346a8b0
+INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/courses/277c48ee-19ec-41f3-8cf1-ae668346a8b0
+INFO     BASE_ASSERTIONS:base_assertions.py:17 Проверка соответствия статус кода 200
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Валидируется JSON схема
+INFO     COURSES_ASSERTIONS:courses.py:27 Проверка ответа на запрос обновления курса
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "title" соответствует Security few audience bring ready relationship national get.
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "max_score" соответствует 99
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "min_score" соответствует 3
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "description" соответствует All best technology high various us fall. Meeting personal public stand town plant. Degree trial reason option.
+Back concern politics indicate almost trial. Return two fine cell inside smile picture.
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "estimated_time" соответствует 6 days

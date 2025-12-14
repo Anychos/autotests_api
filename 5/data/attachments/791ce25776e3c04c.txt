@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEyLTE0VDA0OjE1OjI0LjgyNDM1MiIsInVzZXJfaWQiOiJkMWIyMWQ1Mi0wNGZmLTQ0NjUtYmNhNy01NzY1Y2FmODNiNjYifQ.qP3J4XJ0Jeuv_0Z7m_9PqLdCJXC0rvwIXkKA_J11yMs' \
+  -H 'content-length: 332' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Push great explain financial politics.","maxScore":87,"minScore":35,"description":"Process turn that long recent wish executive scene. Meeting establish above others himself company.","estimatedTime":"12 days","previewFileId":"2dabb59f-ed9d-4a73-8b55-e2ff34425756","createdByUserId":"d1b21d52-04ff-4465-bca7-5765caf83b66"}'
