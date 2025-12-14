@@ -47,12 +47,24 @@ jobs: # то запускается процесс
           pytest -m regression --alluredir=allure-results --numprocesses=4
 
       - name: Получение отчета Allure
-        uses: actions/checkout@v5
+        uses: actions/upload-artifact@v4
         if: always()
         continue-on-error: true
         with:
-          ref: gh-pages
-          path: gh-pages
+          name: allure-results
+          path: allure-results
+
+  publish-report:
+    needs: run-tests
+    runs-on: ubuntu-latest
+    if: always()
+
+    steps:
+      - name: Загрузка отчета Allure
+      - uses: actions/download-artifact@v4
+      - with:
+        - name: allure-results
+        - path: allure-results
 
       - name: Генерация Allure отчета с историей
         uses: simple-elf/allure-report-action@v1.13
