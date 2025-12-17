@@ -70,7 +70,7 @@ jobs: # то запускается процесс
         if: always()
         with:
           name: coverage-report
-          path: swagger_coverage.html
+          path: index.html
 
       - name: Получение отчета Allure
         uses: actions/upload-artifact@v4
