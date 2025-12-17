@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEyLTE3VDAyOjIxOjIzLjIwMDc3OSIsInVzZXJfaWQiOiIwNzFkYzVkYy1mYjViLTQ1ZjctYWViZi0yMzc3ZWNmMTY5MzMifQ.kqaQ_UhkugG8a-1GsRt6FBPzNgbehKGhkFpCOAF_wuQ' \
+  -H 'content-length: 420' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Page happy traditional right fear.","maxScore":52,"minScore":8,"description":"Shake month put specific anything. Civil skin star strong stand. Audience western result successful.\nWork can drop conference particular various home. Truth you capital conference near window.","estimatedTime":"3 days","previewFileId":"89b451f2-a80b-417f-84b1-a281d5e6b0ae","createdByUserId":"071dc5dc-fb5b-45f7-aebf-2377ecf16933"}'

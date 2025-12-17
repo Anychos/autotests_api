@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEyLTE3VDAyOjIxOjIyLjM2NTMwMSIsInVzZXJfaWQiOiJiYzhiYmFhNy1kOWY5LTQwZGItYjM3NS03NTE4NmM0ZjRlZGYifQ.AWoGB9GlJjkNSIrRDvQmKKzx434vDpbrXNHIFJvoiRs' \
+  -H 'content-length: 437' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Share road enough around Democrat image any.","maxScore":63,"minScore":29,"description":"Prove so easy citizen themselves sea. Woman success sure politics foreign follow put. Health attack anything everyone national.\nStage wrong likely all drug successful. Price difference catch first.","estimatedTime":"11 days","previewFileId":"5834cd12-b41e-4626-89eb-1bc2fd0ea56a","createdByUserId":"bc8bbaa7-d9f9-40db-b375-75186c4f4edf"}'

@@ -1,0 +1,33 @@
+INFO     HTTP_CLIENT:event_hooks.py:26 Делаю POST запрос к http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:26 Делаю POST запрос к http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:26 Делаю POST запрос к http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:26 Делаю POST запрос к http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:26 Делаю GET запрос к http://localhost:8000/api/v1/courses?userId=c3e309c2-995d-41e8-8058-fae5b431a8d7
+INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/courses?userId=c3e309c2-995d-41e8-8058-fae5b431a8d7
+INFO     BASE_ASSERTIONS:base_assertions.py:17 Проверка соответствия статус кода 200
+INFO     COURSES_ASSERTIONS:courses.py:66 Проверка ответа на запрос получения курса
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "courses" соответствует 1
+INFO     COURSES_ASSERTIONS:courses.py:43 Проверка курса
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "id" соответствует 228c3774-d838-433b-b292-caa3d160a503
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "title" соответствует Father school general which.
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "max_score" соответствует 69
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "min_score" соответствует 48
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "description" соответствует Blue decide strong. Also hair without himself realize street.
+Foreign save practice wind phone grow stage. Plant book however wonder know. Close win head should data song act.
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "estimated_time" соответствует 10 days
+INFO     FILES_ASSERTIONS:files.py:42 Проверка файла
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "id" соответствует 76b8a235-43c8-44c5-84e7-389f292cf2d5
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "url" соответствует http://localhost:8000/static/courses/image.png
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "filename" соответствует image.png
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "directory" соответствует courses
+INFO     USERS_ASSERTIONS:users.py:37 Проверка пользователя
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "id" соответствует c3e309c2-995d-41e8-8058-fae5b431a8d7
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "email" соответствует pamela80@example.org
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "last_name" соответствует Hamilton
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "first_name" соответствует Heather
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "middle_name" соответствует Cheryl
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Валидируется JSON схема

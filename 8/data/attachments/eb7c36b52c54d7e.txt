@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEyLTE3VDAyOjIxOjI1LjM0NTQ3MyIsInVzZXJfaWQiOiI4NGQyYTkwOC1iMGE1LTQ4NzktODNlOS01ZGIxZDM2ZTQ2ZjUifQ.wgX7XDPaJPjSYguhEElQqtRE0SwQDE6us3qsPbwi_Pg' \
+  -H 'content-length: 393' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Small idea series describe ever.","maxScore":70,"minScore":31,"description":"Know lawyer voice democratic. Dog offer nature end.\nTruth those like yourself. Ready drop look large forget age but result. Culture strong still amount window entire.","estimatedTime":"7 days","previewFileId":"f428e901-632b-4960-ba80-6cf0907ce5b3","createdByUserId":"84d2a908-b0a5-4879-83e9-5db1d36e46f5"}'

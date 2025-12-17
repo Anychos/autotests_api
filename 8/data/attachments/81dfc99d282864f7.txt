@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEyLTE3VDAyOjIxOjI1LjkwODUxNiIsInVzZXJfaWQiOiI4ZTU3MzcyZC05ZjZhLTQxZmUtYTYxYy04ZWEwMGE4NzJmZjkifQ.G31OhpfObrzOG6rkl5lPDPvn8mZA9gwll2VykxinwkU' \
+  -H 'content-length: 393' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Season help bit for subject its.","maxScore":69,"minScore":2,"description":"Involve baby speak buy seek source.\nEnough sense usually stuff.\nPrepare our manage news. Quite Republican item carry then bed time. Exactly president control network.","estimatedTime":"5 days","previewFileId":"f1691038-7169-48d5-a771-2fa5d2aa1d4f","createdByUserId":"8e57372d-9f6a-41fe-a61c-8ea00a872ff9"}'

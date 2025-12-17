@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEyLTE3VDAyOjIxOjIyLjY0NzQ4MiIsInVzZXJfaWQiOiI2YjQ0NDA3MC0xYzZlLTRiMDgtYWI3Ni00ZGIxNGQwZmU4NjEifQ.osNVgtwT8c3rWHFuCG8HgsqF8mifOR3qXZyhnHaKTqU' \
+  -H 'content-length: 270' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Support among month consider require talk book hard.","maxScore":68,"minScore":28,"description":"Financial if yes mouth.","estimatedTime":"20 days","previewFileId":"9c016847-47fb-41d5-a066-2a9e279055cc","createdByUserId":"6b444070-1c6e-4b08-ab76-4db14d0fe861"}'

@@ -1,0 +1,26 @@
+INFO     HTTP_CLIENT:event_hooks.py:26 Делаю POST запрос к http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:26 Делаю POST запрос к http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:26 Делаю POST запрос к http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:26 Делаю POST запрос к http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:26 Делаю POST запрос к http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:26 Делаю GET запрос к http://localhost:8000/api/v1/exercises?courseId=cfd3aeb5-8f7f-4750-b75a-e56cd401a908
+INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/exercises?courseId=cfd3aeb5-8f7f-4750-b75a-e56cd401a908
+INFO     BASE_ASSERTIONS:base_assertions.py:17 Проверка соответствия статус кода 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:112 Проверка ответа на запрос списка упражнений
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "courses" соответствует 1
+INFO     EXERCISES_ASSERTIONS:exercises.py:47 Проверка упражнения
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "id" соответствует e5f63a94-9861-43e3-808d-4b759f7845d4
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "title" соответствует Talk economic value dark field writer.
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "course_id" соответствует cfd3aeb5-8f7f-4750-b75a-e56cd401a908
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "max_score" соответствует 86
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "min_score" соответствует 26
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "order_index" соответствует 49
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "description" соответствует Nation assume dark leader laugh debate share. Level compare others fish. Travel south born protect.
+Today do bring social. Case shoulder beat window him experience on.
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "estimated_time" соответствует 8 days
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Валидируется JSON схема

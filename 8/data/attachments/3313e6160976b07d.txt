@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEyLTE3VDAyOjIxOjI1LjYyNTQxNyIsInVzZXJfaWQiOiJjM2UzMDljMi05OTVkLTQxZTgtODA1OC1mYWU1YjQzMWE4ZDcifQ._4GgGzxHs245lP0bF4IrQr7A5TUs7fS8SK6eVynteQk' \
+  -H 'content-length: 399' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Father school general which.","maxScore":69,"minScore":48,"description":"Blue decide strong. Also hair without himself realize street.\nForeign save practice wind phone grow stage. Plant book however wonder know. Close win head should data song act.","estimatedTime":"10 days","previewFileId":"76b8a235-43c8-44c5-84e7-389f292cf2d5","createdByUserId":"c3e309c2-995d-41e8-8058-fae5b431a8d7"}'

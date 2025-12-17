@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEyLTE3VDAyOjIxOjI2LjE3NzA4NCIsInVzZXJfaWQiOiI1OGFiOWY4Yi0yNGMwLTRlYjktYTE3NS0yY2UxZjg4MGY0M2UifQ.jw_ZtfdwXA7Usf1c8IBo_zkHZrW8yjeFGCsHOCkQ2I8' \
+  -H 'content-length: 372' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Game friend everyone think camera candidate name.","maxScore":60,"minScore":3,"description":"Opportunity art skin help pick well do family. Leave boy contain tree finish yard hotel. Drive instead believe these billion bar.","estimatedTime":"10 days","previewFileId":"4e0a0066-ea13-4de6-b21b-306299d73e92","createdByUserId":"58ab9f8b-24c0-4eb9-a175-2ce1f880f43e"}'

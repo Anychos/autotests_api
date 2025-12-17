@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEyLTE3VDAyOjIxOjI1LjM0NTQ3MyIsInVzZXJfaWQiOiI4NGQyYTkwOC1iMGE1LTQ4NzktODNlOS01ZGIxZDM2ZTQ2ZjUifQ.wgX7XDPaJPjSYguhEElQqtRE0SwQDE6us3qsPbwi_Pg' \
+  -H 'content-length: 311' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Writer hard involve would.","courseId":"51462150-53fc-43d6-b2dd-b37fd177bb40","maxScore":86,"minScore":42,"orderIndex":13,"description":"Myself raise should fly provide. Then road less article pull. I start professor even right.\nParty push get. Result card second marriage.","estimatedTime":"6 days"}'

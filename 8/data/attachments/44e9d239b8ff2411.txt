@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEyLTE3VDAyOjIxOjIzLjgzOTEyMCIsInVzZXJfaWQiOiI3M2UyYjc4Ny02Y2E4LTQzMTQtODE2My1kODZiNDJmY2UxZDUifQ.x7fCAaLSM1tkAqXEZUcuVWD_pjhW1lr5JYbGo5-69D8' \
+  -H 'content-length: 423' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Boy if along hard several clear.","maxScore":75,"minScore":20,"description":"Many enter marriage back bill ability figure.\nAlone gun customer use deal model bit. Begin break guess sometimes free deal start practice. Pressure necessary easy two attorney professional space.","estimatedTime":"11 days","previewFileId":"a1309cf2-0016-4117-999f-0c446fa147ba","createdByUserId":"73e2b787-6ca8-4314-8163-d86b42fce1d5"}'
