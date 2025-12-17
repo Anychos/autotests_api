@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEyLTE3VDAyOjEzOjMxLjU1NTg0NCIsInVzZXJfaWQiOiJiZjZhMzEyZC00MjA3LTQwMjktODYzYy01YWE5Y2RhYjcxYzUifQ.jTb628KeUTVudC3Ly4ZJTlQiQweAVKWB36vHjJx0XRA' \
+  -H 'content-length: 334' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Bit wear success trial family.","maxScore":90,"minScore":40,"description":"Property strategy owner industry about. Note sit series mouth identify. Participant before wear open control.","estimatedTime":"18 days","previewFileId":"d39ee6bc-b9b1-443f-b3b4-f4aee7b06b73","createdByUserId":"bf6a312d-4207-4029-863c-5aa9cdab71c5"}'

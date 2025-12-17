@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEyLTE3VDAyOjEzOjMwLjY2OTU4NiIsInVzZXJfaWQiOiIyN2U4OWZkNC1iNmIyLTQ1OTgtYTc3NC02NzJmZGFmYjJmMzIifQ.RhU6lUabd2qJPwXJd-FD-q79dAty5aKydIOt2MusGgU' \
+  -H 'content-length: 402' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Identify technology economic ago physical everything dark enjoy.","maxScore":94,"minScore":42,"description":"Style any color bit attorney far the everyone. Sport without fund senior pick leg.\nArtist theory himself senior woman option. Own save cup box.","estimatedTime":"4 days","previewFileId":"4b96bca2-47ac-4eed-94bf-0607c26e3acb","createdByUserId":"27e89fd4-b6b2-4598-a774-672fdafb2f32"}'

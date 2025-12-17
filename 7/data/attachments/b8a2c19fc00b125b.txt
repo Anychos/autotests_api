@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEyLTE3VDAyOjEzOjMyLjUxOTMxNSIsInVzZXJfaWQiOiI4YTU5MzMzYy0wOTBjLTQ0NDEtYWUyYy1mNjNlZTYzZTkyZjMifQ.bpVdcQpYV5-UZUvZARj5QJwf0zZIJPICATpyrQZCdJc' \
+  -H 'content-length: 396' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Fine right interesting this.","maxScore":83,"minScore":29,"description":"Little already recently go result difficult. Tough present thought article performance open imagine.\nSomebody life nothing ok visit. Impact wall which Mrs practice whether.","estimatedTime":"28 days","previewFileId":"f55ab0a0-ab2a-4ecb-bc3d-2f9bbf4df539","createdByUserId":"8a59333c-090c-4441-ae2c-f63ee63e92f3"}'

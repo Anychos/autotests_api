@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEyLTE3VDAyOjEzOjMzLjkzMzc3MCIsInVzZXJfaWQiOiJkNmFkN2Q4ZS0zNzI2LTQxNzMtYjYzYy03ZGViNjZiYzIyMzEifQ.-pFB9idDfekygTrU-z8QmrNT7SY8lH6GmG4ljpwJeyc' \
+  -H 'content-length: 380' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Fund glass station rock why relate someone commercial.","courseId":"7de60ced-7de7-4113-abfe-53daf4e52559","maxScore":100,"minScore":1,"orderIndex":50,"description":"North population head land inside. Run shoulder long huge. Win young trade meeting as.\nOne enough social southern case. Bar upon network. Ahead person material fill she develop.","estimatedTime":"1 days"}'

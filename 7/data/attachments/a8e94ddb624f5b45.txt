@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEyLTE3VDAyOjEzOjM0LjI3NTI1MCIsInVzZXJfaWQiOiJmZGUyYjViNC1lYjUwLTRkNjQtOWE5YS1hYzllNmIzN2FmMGEifQ.GNYy6N8vycMrDMoTz6tvAki4Khs6mzdzfBxYotBuTV4' \
+  -H 'content-length: 390' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Region piece hour.","maxScore":91,"minScore":11,"description":"Box increase unit boy civil support. Perhaps choose wonder might language consumer main business.\nMyself mean unit relate somebody line. Physical really degree ready agreement.","estimatedTime":"19 days","previewFileId":"37d6db4e-05d7-4062-8c69-d4204a27781b","createdByUserId":"fde2b5b4-eb50-4d64-9a9a-ac9e6b37af0a"}'

@@ -1,0 +1,15 @@
+INFO     HTTP_CLIENT:event_hooks.py:26 Делаю POST запрос к http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:26 Делаю POST запрос к http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:26 Делаю GET запрос к http://localhost:8000/api/v1/users/me
+INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/users/me
+INFO     BASE_ASSERTIONS:base_assertions.py:17 Проверка соответствия статус кода 200
+INFO     USERS_ASSERTIONS:users.py:54 Проверка ответа на запрос пользователя
+INFO     USERS_ASSERTIONS:users.py:37 Проверка пользователя
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "id" соответствует c6e5df1c-36a7-4bf5-aa95-5a078435ae5a
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "email" соответствует meredith73@example.com
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "last_name" соответствует Brown
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "first_name" соответствует Patrick
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "middle_name" соответствует Bailey
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Валидируется JSON схема

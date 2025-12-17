@@ -1,0 +1,25 @@
+INFO     HTTP_CLIENT:event_hooks.py:26 Делаю POST запрос к http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:26 Делаю POST запрос к http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:26 Делаю POST запрос к http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:26 Делаю POST запрос к http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:26 Делаю POST запрос к http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:26 Делаю GET запрос к http://localhost:8000/api/v1/exercises/33418a67-dae9-421a-9494-ef6a6e182239
+INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/exercises/33418a67-dae9-421a-9494-ef6a6e182239
+INFO     BASE_ASSERTIONS:base_assertions.py:17 Проверка соответствия статус кода 200
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Валидируется JSON схема
+INFO     EXERCISES_ASSERTIONS:exercises.py:66 Проверка ответа на запрос упражнения
+INFO     EXERCISES_ASSERTIONS:exercises.py:47 Проверка упражнения
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "id" соответствует 33418a67-dae9-421a-9494-ef6a6e182239
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "title" соответствует Very might middle ground.
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "course_id" соответствует 8447db1d-aa7f-47c5-aae1-483d00cd52e5
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "max_score" соответствует 66
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "min_score" соответствует 2
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "order_index" соответствует 67
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "description" соответствует Field main important table you manage garden article. Writer born college. Less million accept sense hotel we model across.
+Camera writer girl computer store both.
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "estimated_time" соответствует 7 days

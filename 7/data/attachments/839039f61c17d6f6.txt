@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEyLTE3VDAyOjEzOjMzLjM4MTkyMyIsInVzZXJfaWQiOiIwOWY2ZmNhNi00OTIyLTQ3YjctYTM0Ny00ZGM2MWFjYjU5ODMifQ.cGzqztBHc-zGGvta4y_E9AwEP7Hwp3f8myeNRDq5YQo' \
+  -H 'content-length: 315' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Manager end security product small off.","maxScore":81,"minScore":35,"description":"Factor much apply play enough. Wonder participant general fund man however happen.","estimatedTime":"7 days","previewFileId":"91c6c77b-8979-4a36-a684-070533984417","createdByUserId":"09f6fca6-4922-47b7-a347-4dc61acb5983"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEyLTE3VDAyOjEzOjMzLjkzMzc3MCIsInVzZXJfaWQiOiJkNmFkN2Q4ZS0zNzI2LTQxNzMtYjYzYy03ZGViNjZiYzIyMzEifQ.-pFB9idDfekygTrU-z8QmrNT7SY8lH6GmG4ljpwJeyc' \
+  -H 'content-length: 317' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Weight view clearly property live life positive.","maxScore":63,"minScore":46,"description":"Even often good window in. Thought discussion social report popular offer.","estimatedTime":"19 days","previewFileId":"76e16656-864d-4abb-8362-c03335e724b1","createdByUserId":"d6ad7d8e-3726-4173-b63c-7deb66bc2231"}'

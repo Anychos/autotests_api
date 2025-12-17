@@ -1,5 +1,0 @@
-INFO     HTTP_CLIENT:event_hooks.py:26 Делаю POST запрос к http://localhost:8000/api/v1/users
-INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/users
-INFO     BASE_ASSERTIONS:base_assertions.py:17 Проверка соответствия статус кода 200
-INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "email" соответствует dylancarter@mail.ru
-INFO     SCHEMA_ASSERTIONS:schema.py:20 Валидируется JSON схема
