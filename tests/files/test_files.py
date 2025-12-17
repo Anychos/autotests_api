@@ -23,7 +23,7 @@ from tools.assertions.files import (
     assert_get_file_with_incorrect_file_id_response,
 )
 from tools.assertions.schema import validate_json_schema
-from tools.base_assertions import assert_status_code
+from tools.assertions.base_assertions import assert_status_code
 
 
 @pytest.mark.files

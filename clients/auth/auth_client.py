@@ -1,10 +1,12 @@
 import allure
 from httpx import Response
 
+from clients.api_coverage import tracker
 from clients.auth.auth_schema import LoginRequestSchema, LoginResponseSchema, RefreshRequestSchema
 from clients.base_client import BaseAPIClient
 from clients.public_builder import get_public_client
 from tools.routes import APIRoutes
+from clients import api_coverage
 
 
 class AuthAPIClient(BaseAPIClient):
@@ -12,6 +14,7 @@ class AuthAPIClient(BaseAPIClient):
     Клиент для работы с методами авторизации
     """
     @allure.step("Логин пользователя")
+    @tracker.track_coverage_httpx(f'{APIRoutes.AUTHENTICATION}/login')
     def login_api(self, request_body: LoginRequestSchema) -> Response:
         """
         Выполняет POST запрос для авторизации
@@ -21,6 +24,7 @@ class AuthAPIClient(BaseAPIClient):
         """
         return self.post(f'{APIRoutes.AUTHENTICATION}/login', json=request_body.model_dump(by_alias=True))
 
+    @tracker.track_coverage_httpx(f'{APIRoutes.AUTHENTICATION}/refresh')
     @allure.step("Обновление токена")
     def refresh_api(self, request_body: RefreshRequestSchema) -> Response:
         """

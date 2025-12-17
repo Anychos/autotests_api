@@ -10,3 +10,4 @@ uuid==1.30
 pytest-rerunfailures==16.1
 pytest-xdist==3.8.0
 allure-python-commons==2.15.2
+swagger-coverage-tool==0.31.0

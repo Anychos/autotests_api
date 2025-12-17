@@ -11,7 +11,7 @@ from clients.exercises.exercises_schema import (
     UpdateExerciseResponseSchema,
 )
 from tools.assertions.errors import assert_internal_error_response
-from tools.base_assertions import assert_is_true, assert_value
+from tools.assertions.base_assertions import assert_is_true, assert_value
 from tools.logger import get_logger
 
 logger = get_logger("EXERCISES_ASSERTIONS")

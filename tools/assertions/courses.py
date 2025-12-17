@@ -10,7 +10,7 @@ from clients.courses.courses_schema import (
 )
 from tools.assertions.files import assert_file
 from tools.assertions.users import assert_user
-from tools.base_assertions import assert_is_true, assert_value
+from tools.assertions.base_assertions import assert_is_true, assert_value
 from tools.logger import get_logger
 
 logger = get_logger("COURSES_ASSERTIONS")

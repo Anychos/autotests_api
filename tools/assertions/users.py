@@ -6,7 +6,7 @@ from clients.users.users_schema import (
     GetUserResponseSchema,
     UserSchema,
 )
-from tools.base_assertions import assert_value
+from tools.assertions.base_assertions import assert_value
 from tools.logger import get_logger
 
 logger = get_logger("USERS_ASSERTIONS")

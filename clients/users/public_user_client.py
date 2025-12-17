@@ -1,6 +1,7 @@
 import allure
 from httpx import Response
 
+from clients.api_coverage import tracker
 from clients.base_client import BaseAPIClient
 from clients.public_builder import get_public_client
 from clients.users.users_schema import CreateUserRequestSchema, CreateUserResponseSchema
@@ -12,6 +13,7 @@ class PublicUserAPIClient(BaseAPIClient):
     Клиент для работы с публичными методами пользователя
     """
     @allure.step("Создание пользователя")
+    @tracker.track_coverage_httpx(APIRoutes.USERS)
     def create_user_api(self, request_body: CreateUserRequestSchema) -> Response:
         """
         Выполняет POST запрос для создания пользователя

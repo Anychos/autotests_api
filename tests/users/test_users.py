@@ -16,7 +16,7 @@ from tools.allure.suite import AllureSuite
 from tools.allure.tags import AllureTags
 from tools.assertions.schema import validate_json_schema
 from tools.assertions.users import assert_get_user_response
-from tools.base_assertions import assert_status_code, assert_value
+from tools.assertions.base_assertions import assert_status_code, assert_value
 from tools.data_generator import fake
 
 

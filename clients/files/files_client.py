@@ -1,6 +1,7 @@
 import allure
 from httpx import Response
 
+from clients.api_coverage import tracker
 from clients.base_client import BaseAPIClient
 from clients.files.files_schema import CreateFileRequestSchema, CreateFileResponseSchema
 from clients.private_builder import AuthUserSchema, get_private_client
@@ -12,6 +13,7 @@ class FilesAPIClient(BaseAPIClient):
     Клиент для работы с файлами
     """
     @allure.step("Получение файла")
+    @tracker.track_coverage_httpx(APIRoutes.FILES + '/{file_id}')
     def get_file_api(self, file_id: str) -> Response:
         """
         Получение информации о файле по id
@@ -22,6 +24,7 @@ class FilesAPIClient(BaseAPIClient):
         return self.get(f'{APIRoutes.FILES}/{file_id}')
 
     @allure.step("Создание файла")
+    @tracker.track_coverage_httpx(APIRoutes.FILES)
     def create_file_api(self, request_body: CreateFileRequestSchema) -> Response:
         """
         Загрузка файла
@@ -41,6 +44,7 @@ class FilesAPIClient(BaseAPIClient):
         return CreateFileResponseSchema.model_validate_json(response.text)
 
     @allure.step("Удаление файла")
+    @tracker.track_coverage_httpx(APIRoutes.FILES + '/{file_id}')
     def delete_file_api(self, file_id: str) -> Response:
         """
         Удаление файла по id

@@ -1,6 +1,7 @@
 import allure
 from httpx import Response
 
+from clients.api_coverage import tracker
 from clients.base_client import BaseAPIClient
 from clients.courses.courses_schema import (
     CreateCourseRequestSchema,
@@ -17,6 +18,7 @@ class CoursesAPIClient(BaseAPIClient):
     Клиент для работы с курсами
     """
     @allure.step("Получение списка курсов")
+    @tracker.track_coverage_httpx(APIRoutes.COURSES)
     def get_courses_api(self, query: GetCoursesQuerySchema) -> Response:
         """
         Получение информации о курсе по id пользователя
@@ -27,6 +29,7 @@ class CoursesAPIClient(BaseAPIClient):
         return self.get(APIRoutes.COURSES, params=query.model_dump(by_alias=True))
 
     @allure.step("Получение курса с id: {course_id}")
+    @tracker.track_coverage_httpx(APIRoutes.COURSES + '/{course_id}')
     def get_course_api(self, course_id: str) -> Response:
         """
         Получение информации о курсе по его id
@@ -37,6 +40,7 @@ class CoursesAPIClient(BaseAPIClient):
         return self.get(f'{APIRoutes.COURSES}/{course_id}')
 
     @allure.step("Создание курса")
+    @tracker.track_coverage_httpx(APIRoutes.COURSES)
     def create_course_api(self, request_body: CreateCourseRequestSchema) -> Response:
         """
         Создание курса
@@ -52,6 +56,7 @@ class CoursesAPIClient(BaseAPIClient):
         return CreateCourseResponseSchema.model_validate_json(response.text)
 
     @allure.step("Обновление курса")
+    @tracker.track_coverage_httpx(APIRoutes.COURSES + '/{course_id}')
     def update_course_api(self, course_id: str, request_body: UpdateCourseRequestSchema) -> Response:
         """
         Обновление курса
@@ -63,6 +68,7 @@ class CoursesAPIClient(BaseAPIClient):
         return self.patch(f'{APIRoutes.COURSES}/{course_id}', json=request_body.model_dump(by_alias=True))
 
     @allure.step("Удаление курса")
+    @tracker.track_coverage_httpx(APIRoutes.COURSES + '/{course_id}')
     def delete_course_api(self, course_id: str) -> Response:
         return self.delete(f'{APIRoutes.COURSES}/{course_id}')
 

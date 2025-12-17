@@ -1,7 +1,7 @@
 import allure
 
 from clients.auth.auth_schema import LoginResponseSchema
-from tools.base_assertions import assert_is_true, assert_value
+from tools.assertions.base_assertions import assert_is_true, assert_value
 from tools.logger import get_logger
 
 logger = get_logger("AUTHENTICATION_ASSERTIONS")

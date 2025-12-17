@@ -46,10 +46,35 @@ jobs: # то запускается процесс
         run: |
           pytest -m regression --alluredir=allure-results --numprocesses=4
 
+      - name: Восстановление кеша
+        uses: actions/cache/restore@v4
+        with:
+          path: coverage-history.json
+          key: coverage-history-${{ github.run_id }}
+          restore-keys: |
+            coverage-history
+
+      - name: Генерация отчета о покрытии
+        run: |
+          swagger-coverage-tool save-report
+
+      - name: Сохранение кеша
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: coverage-history.json
+          key: coverage-history-${{ github.run_id }}
+
+      - name: Загрузка отчета о покрытии
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: coverage-report
+          path: coverage.html
+
       - name: Получение отчета Allure
         uses: actions/upload-artifact@v4
         if: always()
-        continue-on-error: true
         with:
           name: allure-results
           path: allure-results

@@ -9,7 +9,7 @@ from clients.files.files_schema import (
 )
 from config import settings
 from tools.assertions.errors import assert_internal_error_response, assert_validation_error_response
-from tools.base_assertions import assert_value
+from tools.assertions.base_assertions import assert_value
 from tools.logger import get_logger
 
 logger = get_logger("FILES_ASSERTIONS")

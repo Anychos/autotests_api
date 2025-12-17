@@ -1,6 +1,7 @@
 import allure
 from httpx import Response
 
+from clients.api_coverage import tracker
 from clients.base_client import BaseAPIClient
 from clients.exercises.exercises_schema import (
     CreateExerciseRequestSchema,
@@ -23,6 +24,7 @@ class ExercisesAPIClient(BaseAPIClient):
     Клиент для работы с упражнениями
     """
     @allure.step("Получение списка упражнений")
+    @tracker.track_coverage_httpx(APIRoutes.EXERCISES)
     def get_exercises_api(self, query: GetExercisesQuerySchema) -> Response:
         """
         Выполняет GET запрос для получения списка упражнений
@@ -38,6 +40,7 @@ class ExercisesAPIClient(BaseAPIClient):
         return response.json()
 
     @allure.step("Получение данных упражнения с id: {query}")
+    @tracker.track_coverage_httpx(APIRoutes.EXERCISES + '/{exercise_id}')
     def get_exercise_api(self, query: GetExerciseQuerySchema) -> Response:
         """
         Выполняет GET запрос для получения упражнения по его id
@@ -53,6 +56,7 @@ class ExercisesAPIClient(BaseAPIClient):
         return GetExerciseResponseSchema.model_validate_json(response.text)
 
     @allure.step("Создание нового упражнения")
+    @tracker.track_coverage_httpx(APIRoutes.EXERCISES)
     def create_exercise_api(self, request_body: CreateExerciseRequestSchema) -> Response:
         """
         Выполняет POST запрос для создания упражнения
@@ -68,6 +72,7 @@ class ExercisesAPIClient(BaseAPIClient):
         return CreateExerciseResponseSchema.model_validate_json(response.text)
 
     @allure.step("Обновление упражнения с id: {query}")
+    @tracker.track_coverage_httpx(APIRoutes.EXERCISES + '/{exercise_id}')
     def update_exercise_api(self, query: UpdateExerciseQuerySchema, request_body: UpdateExerciseRequestSchema) -> Response:
         """
         Выполняет PATCH запрос для обновления упражнения
@@ -84,6 +89,7 @@ class ExercisesAPIClient(BaseAPIClient):
         return UpdateExerciseResponseSchema.model_validate_json(response.text)
 
     @allure.step("Удаления упражнения с id: {query}")
+    @tracker.track_coverage_httpx(APIRoutes.EXERCISES + '/{exercise_id}')
     def delete_exercise_api(self, query: DeleteExerciseQuerySchema) -> Response:
         """
         Выполняет DELETE запрос для удаления упражнения

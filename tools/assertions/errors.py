@@ -1,7 +1,7 @@
 import allure
 
 from clients.error_schema import InternalErrorResponseSchema, ValidationErrorResponseSchema, ValidationErrorSchema
-from tools.base_assertions import assert_length, assert_value
+from tools.assertions.base_assertions import assert_length, assert_value
 from tools.logger import get_logger
 
 logger = get_logger("ERRORS_ASSERTIONS")
