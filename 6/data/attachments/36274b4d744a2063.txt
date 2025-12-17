@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEyLTE3VDAyOjEwOjE2LjQyNDgyNSIsInVzZXJfaWQiOiIwNTNlMzMyZC01NjQ5LTQxMDYtYTYzYy1lZDg4ZGMxNGZkNTEifQ.-9rjWkUYb8yF8V926-JKK3UhI5-cZQeC2DjZBpEtQYw' \
+  -H 'content-length: 394' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Find hard thus property project part.","maxScore":54,"minScore":37,"description":"Look during without should region agent receive. Ahead among affect tend wonder lay. Capital ahead remember need effort increase. Couple recognize him home clear.","estimatedTime":"27 days","previewFileId":"ca319f8d-6aa0-4022-85ff-35c9784fa7d9","createdByUserId":"053e332d-5649-4106-a63c-ed88dc14fd51"}'

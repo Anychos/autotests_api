@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEyLTE3VDAyOjEwOjE2LjY4ODM5MSIsInVzZXJfaWQiOiJmNmJkODMxMy0xZGNmLTRjZDYtYjhjMC01M2Y3YTFmYmM4MmEifQ.Ma2prIxjJ4cX43uUjKKQqmV0_OdFpW3p4YgCCMHyFLU' \
+  -H 'content-length: 315' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Apply method executive dark all some car at.","maxScore":58,"minScore":38,"description":"Boy machine result performance word fear project. Remember individual might.","estimatedTime":"26 days","previewFileId":"ce9a1b71-4608-497f-8390-048b353f662e","createdByUserId":"f6bd8313-1dcf-4cd6-b8c0-53f7a1fbc82a"}'

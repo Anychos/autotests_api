@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEyLTE3VDAyOjEwOjEzLjYzNjk2MyIsInVzZXJfaWQiOiIzMmZhMjQ2OS1kOWQyLTQ1NGQtYjRlYi01NDkzOGQwY2E3Y2MifQ.2K--11h3NAN6fsNYeMSTmWiw9lN8S27v-vnw2gl3EQY' \
+  -H 'content-length: 376' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Avoid father society talk.","maxScore":53,"minScore":3,"description":"Two many east into garden thus. Bed model become first. Arm together inside day either usually.\nHave gas modern keep. Share cup protect prepare of foreign.","estimatedTime":"13 days","previewFileId":"813bb639-e58a-46eb-8b86-265d3547e1c3","createdByUserId":"32fa2469-d9d2-454d-b4eb-54938d0ca7cc"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEyLTE3VDAyOjEwOjE0LjE1MDUxMiIsInVzZXJfaWQiOiIzYzBkMWY2NC1jNDJkLTQ5ZTQtYTA4ZC1hZjg3YTU4NTNmODgifQ.7mQoO4LqWN2eewyejDPkoMGcxwpPoK_lPAJLPnSQ1z0' \
+  -H 'content-length: 324' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Option only go score improve growth.","maxScore":99,"minScore":19,"description":"Performance must recently central evening wind. Sign attack around hour mention purpose line.","estimatedTime":"19 days","previewFileId":"412194fc-ae5a-477c-94ec-946f3005dfa8","createdByUserId":"3c0d1f64-c42d-49e4-a08d-af87a5853f88"}'

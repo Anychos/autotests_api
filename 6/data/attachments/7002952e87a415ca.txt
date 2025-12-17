@@ -1,0 +1,21 @@
+INFO     HTTP_CLIENT:event_hooks.py:26 Делаю POST запрос к http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:26 Делаю POST запрос к http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:26 Делаю POST запрос к http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:26 Делаю POST запрос к http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:26 Делаю POST запрос к http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:36 Получаю ответ 200 OK от http://localhost:8000/api/v1/exercises
+INFO     BASE_ASSERTIONS:base_assertions.py:17 Проверка соответствия статус кода 200
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Валидируется JSON схема
+INFO     EXERCISES_ASSERTIONS:exercises.py:28 Проверка ответа на запрос создания упражнения
+INFO     BASE_ASSERTIONS:base_assertions.py:45 Проверка наличия поля "id"
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "title" соответствует Term right meet fact a quickly.
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "course_id" соответствует d3b673b9-7170-4d14-9ffb-4ec8e88407bd
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "max_score" соответствует 77
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "min_score" соответствует 17
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "order_index" соответствует 90
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "description" соответствует Power could student. Market marriage power task seem opportunity. Street national national think.
+INFO     BASE_ASSERTIONS:base_assertions.py:31 Проверка что значение в поле "estimated_time" соответствует 9 days
